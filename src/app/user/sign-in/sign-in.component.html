@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- logo -->
+    <!--
+    <link rel="icon" type="image/png" href="images/fav_icon.png"/>
+   -->
+    <title>Yaari Supplier</title>
+
+
+  </head>
+<body>
+
+<!-- Sign IN -->
+
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-light custom_navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand">
+      <img src="../../../assets/images/logo1.png" width="30" height="30" class="d-inline-block img-fluid align-top" alt="">
+    </a>
+  </div>
+</nav>
+
+<section class="sing_in_sec">
+  <div class="container-fluid pl-0">
+    <div class="row mx-0">
+      <div class="col-lg-6 pl-0">
+        <div class="login_img_sec">
+          <img src="../../../assets/images/login_supp_img.png" class="img-fluid" /> 
+          <div class="main_title_dv d-inline-block p-5 w-100">
+            <h1 class="font-700 text-light title_main position-relative d-inline-block">
+              Welcome
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mx-auto">
+        <div class="sing_in_sec_form">
+          <div class="main_title_dv d-inline-block py-5 w-100">
+            <h1 class="font-600 mb-4 text-dark title_main position-relative d-inline-block">
+              Sign In
+            </h1>
+          </div>
+          <form [formGroup]="SignIn" (ngSubmit)="save(SignIn.value)">
+            <div class="form-group mb-4">
+              <label class="font-500 text-dark font-18" for="exampleInputEmail1">Email</label>
+              <input type="email" id="email" class="form-control p-3" id="exampleInputEmail1" aria-describedby="emailHelp"
+              formControlName="email" placeholder="Enter Your Email ID">
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group mb-4">
+              <label class="font-500 text-dark font-18" for="exampleInputPassword1">Password</label>
+              <input type="password" id="password" class="form-control p-3" id="exampleInputPassword1"
+              formControlName="password" placeholder="Enter Your Password">
+            </div>
+            <div class="form-group mb-4 float-right">
+              <a class="text-link font-16 font-600" href="javaScript:void(0)">
+                Forgot Password?
+              </a>
+            </div>
+            <div class="d-inline-block text-center w-100 py-3">
+              <button type="submit"  class="btn btn-theme px-5 w-50 py-3 font-18">
+          Sign In
+              </button>
+            </div>
+            <div class="d-inline-block text-center w-100 py-3">
+              <span class="text-dark font-16">
+                Don't have an account?
+                 
+                  
+                    <a class="text-link font-600 font-18" routerLink="/register">Register Now</a>
+                    
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sign IN End -->
+
+
+</body>
+
+
+</html>
+
